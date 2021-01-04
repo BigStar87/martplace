@@ -1,6 +1,8 @@
 @import '_vars';
 @import '_global';
+@import 'fonts';
 
+// start Header
 .header__top{
   background-color: #eef1f3;
 }
@@ -13,8 +15,7 @@
 .header__menu{
   display: flex;
   align-items: center;
-}
-.heder__menu-btn{
+  &-btn{
   margin-right: 218px;
   background-color: $link;
   padding: 18px 22px;
@@ -22,6 +23,7 @@
   color: #fff;
   font-size: 14px;
 }
+
 .avatar{
   width: 50px;
   height: 50px;
@@ -82,11 +84,48 @@
     width: 70px;
     height: 45px;
     background-color: $link;
-    color: #fff;
     border-radius: 50px;
     right: 0;
     top: 0;
   }
 }
+.button::before{
+  content: "\e986";
+  font-family: 'icomoon';
+}
+// end Header
 
-
+// start Products
+.products{
+  background-color: #284bcd;
+  min-height: 726px;
+  color: #fff;
+}
+.products__title{
+  padding-top: 180px;
+  text-align: center;
+  font-size: 60px;
+  .title__bottom{
+    font-weight: 700;
+  }
+  p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 72px;
+  }
+}
+.products__btn{
+  text-align: center;
+  margin-top: 45px;
+  button{
+    margin: 0 15px;
+    padding: 21px 32px;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    outline: transparent;
+    cursor: pointer;
+  }
+}
+// end Products
