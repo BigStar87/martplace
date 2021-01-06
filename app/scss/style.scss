@@ -1,6 +1,5 @@
 @import '_vars';
 @import '_global';
-@import 'fonts';
 
 // start Header
 .header__top {
@@ -25,29 +24,34 @@
     border-radius: 50px;
     color: #fff;
     font-size: 14px;
+    outline: transparent;
   }
 
   &-bell {
-    svg {      
+    svg {
       fill: #7e8fa1;
       height: 20px;
-      width: 15px;
+      width: 20px;
     }
   }
 
   &-mail {
+    margin: 0 35px;
+
     svg {
       fill: #7e8fa1;
       height: 20px;
-      width: 15px;
+      width: 20px;
     }
   }
 
   &-basket {
+    margin-right: 50px;
+
     svg {
       fill: #7e8fa1;
       height: 20px;
-      width: 15px;
+      width: 20px;
     }
   }
 
@@ -96,6 +100,10 @@
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 500;
+
+    &:hover {
+      color: $link;
+    }
   }
 }
 
@@ -125,26 +133,27 @@
     border-radius: 50px;
     right: 0;
     top: 0;
+    cursor: pointer;
 
     svg {
       fill: #fff;
-      height: 15px;
-      width: 15px;
+      height: 20px;
+      width: 20px;
     }
   }
 }
 
 // end Header
 
-// start Products
-.products {
+// start Heading
+.heading {
+  position: relative;
   background-color: #284bcd;
-  min-height: 726px;
+  padding: 180px 0 235px;
   color: #fff;
 }
 
-.products__title {
-  padding-top: 180px;
+.heading__title {
   text-align: center;
   font-size: 60px;
 
@@ -159,7 +168,7 @@
   }
 }
 
-.products__btn {
+.heading__btn {
   text-align: center;
   margin-top: 45px;
 
@@ -172,7 +181,331 @@
     border: 1px solid #fff;
     outline: transparent;
     cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #fff;
+      color: $link;
+    }
+    &:active{
+      transform: scale(0.9, 0.9);
+    }
   }
 }
 
-// end Products
+.search {
+  position: absolute;
+  max-width: 1140px;
+  width: 100%;
+  bottom: 0;
+  transform: translateY(50%);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+
+  &::before,
+  &::after {
+    content: "";
+    border-radius: 10px;
+    background-color: #fff;
+    opacity: 0.5;
+    position: absolute;
+    height: 35px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  &::before {
+    width: 1110px;
+    top: -13px;
+  }
+
+  &::after {
+    width: 1080px;
+    top: -26px;
+  }
+
+
+  &__inner {
+    padding: 42px;
+
+    form {
+      display: flex;
+      width: 100%;
+    }
+
+    input {
+      width: 615px;
+      height: 55px;
+      padding: 0 32px;
+      border: 1px solid #dcdcdc;
+      outline: transparent;
+    }
+
+    select {
+      width: 195px;
+      height: 55px;
+      padding: 0 22px;
+      border: 1px solid #dcdcdc;
+      color: $text;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath fill='%23000000' d='M0 6c0-0.128 0.049-0.256 0.146-0.354 0.195-0.195 0.512-0.195 0.707 0l8.646 8.646 8.646-8.646c0.195-0.195 0.512-0.195 0.707 0s0.195 0.512 0 0.707l-9 9c-0.195 0.195-0.512 0.195-0.707 0l-9-9c-0.098-0.098-0.146-0.226-0.146-0.354z'%3E%3C/path%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: 160px center;
+      background-size: 12px;
+      outline: transparent;
+      cursor: pointer;
+    }
+
+    button {
+      max-width: 210px;
+      width: 100%;
+      height: 55px;
+      margin-left: auto;
+      border-radius: 5px;
+      background-color: $link;
+      border: none;
+      color: #fff;
+      outline: transparent;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+  }
+}
+
+// end Heading
+
+// start advantages
+
+.advantages {
+  padding: 186px 0 120px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 362px;
+    text-align: center;
+    padding: 40px 36px 50px;
+
+    &:hover {
+      box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  &__item-img {
+    width: 112px;
+    height: 112px;
+    margin: 0 auto;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  &__item-title {
+    font-size: 24px;
+    line-height: 74px;
+    font-weight: 500;
+    padding-top: 15px;
+  }
+
+  &__item-text {
+    font-size: 16px;
+    line-height: 30px;
+    color: $text;
+  }
+}
+
+// ebd advantages
+
+// start slider
+
+.slider {
+  background-color: #eff1f5;
+  padding: 120px 0;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    padding: 44px 31px;
+    background-color: #fff;
+    font-size: 30px;
+    margin-bottom: 51px;
+
+    &-btn {
+      display: flex;
+      justify-content: space-between;
+      width: 110px;
+      height: 45px;
+      padding: 0 20px;
+      border-radius: 22px;
+      background-color: #7347c1;
+      button{
+        background-color: #7347c1;
+        border: none;
+        outline: transparent;
+      }
+      svg{
+        width: 14px;
+        height: 22px;
+        fill: #fff;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    background-color: #fff;
+  }
+
+  &__item-img {
+    max-width: 550px;
+    width: 100%;
+  }
+
+  &__content {
+    padding: 50px 62px 25px 52px;
+    width: 100%;
+  }
+
+  &__content-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 14px;
+  }
+
+  &__content-profil {
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+
+    img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    span {
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+
+  &__content-avatar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+    span {
+      color: #000;
+    }
+  }
+
+  &__content-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+
+    span {
+      color: #7347c1;
+    }
+  }
+
+  &__content-text {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $text;
+    margin-bottom: 35px;
+  }
+
+  &__content-info {
+    position: relative;
+    margin-bottom: 60px;
+
+    a {
+      font-size: 15px;
+      line-height: 30px;
+      background-color: #f1f3f6;
+      padding: 0 15px;
+      border-radius: 15px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      border-bottom: 1px solid #ececec;
+      width: 488px;
+      left: 0;
+      bottom: -35px;
+    }
+  }
+
+  &__content-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: $link;
+      border-radius: 20px;
+      color: #fff;
+      font-weight: 500;
+      outline: transparent;
+    }
+
+    button {
+      border: none;
+      outline: transparent;
+      background-color: #fff;
+      margin-left: 15px;
+    }
+
+    svg {
+      height: 16px;
+      width: 16px;
+    }
+
+    .lnr-heart {
+      fill: #7c53c5;
+    }
+
+    .lnr-cart {
+      fill: #177ded;
+    }
+
+    .color__cart {
+      color: #177ded;
+    }
+
+    span {
+      margin-left: 12px;
+    }
+  }
+
+  .jq-ry-normal-group svg {
+    fill: #fff;
+    stroke: #ffc000;
+    stroke-width: 40;
+  }
+
+  .jq-ry-rated-group svg {
+    fill: #ffc000;
+  }
+}
+
+
+// end slider

@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
   <header class="header">
     <div class="header__top">
       <div class="container">
@@ -22,19 +21,19 @@
             </a>
           </div>
           <div class="header__menu">
-            <a class="header__menu-btn" href="#">Become a Seller</a>
+            <a class="header__menu-btn btn" href="#">Become a Seller</a>
             <a class="header__menu-bell" href="#">
-              <svg class="lnr lnr-alarm">
+              <svg class="header__menu-icon">
                 <use xlink:href="sprite.svg#lnr-alarm"></use>
               </svg>
             </a>
             <a class="header__menu-mail" href="#">
-              <svg class="lnr lnr-envelope">
+              <svg class="header__menu-icon">
                 <use xlink:href="sprite.svg#lnr-envelope"></use>
               </svg>
             </a>
             <a class="header__menu-basket" href="#">
-              <svg class="lnr lnr-cart">
+              <svg class="header__menu-icon">
                 <use xlink:href="sprite.svg#lnr-cart"></use>
               </svg>
             </a>
@@ -75,9 +74,9 @@
     </div>
   </header>
 
-  <section class="products">
+  <section class="heading">
     <div class="container">
-      <div class="products__title">
+      <div class="heading__title">
         <div class="title">
           Create Your Own
         </div>
@@ -88,16 +87,312 @@
           MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
         </p>
       </div>
-      <div class="products__btn">
+      <div class="heading__btn">
         <button type="button" data-filter=".categori-all">View All Products</button>
         <button type="button" data-filter=".categori-popular">Popular Products</button>
+      </div>
+      <div class="search">
+        <div class="search__inner">
+          <form>
+            <input type="text" placeholder="Search your products..." required>
+            <select name="category">
+              <option>All Categories</option>
+            </select>
+            <button class="btn" type="submit">Search Now</button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <section class="advantages">
+    <div class="container">
+      <div class="advantages__inner">
+        <div class="advantages__item">
+          <div class="advantages__item-img">
+            <img src="images/advantages-1.png" alt="#">
+          </div>
+          <div class="advantages__item-title">
+            Best UX Research
+          </div>
+          <div class="advantages__item-text">
+            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+            the mattis, leo quam aliquet diam
+            congue is laoreet elit metus.
+          </div>
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__item-img">
+            <img src="images/advantages-2.png" alt="#">
+          </div>
+          <div class="advantages__item-title">
+            Fully Responsive
+          </div>
+          <div class="advantages__item-text">
+            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+            the mattis, leo quam aliquet diam
+            congue is laoreet elit metus.
+          </div>
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__item-img">
+            <img src="images/advantages-3.png" alt="#">
+          </div>
+          <div class="advantages__item-title">
+            Buy & Sell Easily
+          </div>
+          <div class="advantages__item-text">
+            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+            the mattis, leo quam aliquet diam
+            congue is laoreet elit metus.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slider">
+    <div class="container">
+      <div class="slider__title">
+        Weekly Featured Products
+        <div class="slider__title-btn">
+          <button type="button" class="slick-prev">
+            <svg class="lnr lnr-chevron-left">
+              <use xlink:href="sprite.svg#lnr-chevron-left"></use>
+            </svg>
+          </button>
+          <button type="button" class="slick-next">
+            <svg class="lnr lnr-chevron-right">
+              <use xlink:href="sprite.svg#lnr-chevron-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="slider__carousel">
+        <div class="slider__inner">
+          <div class="slider__item">
+            <a class="slider__item-img" href="#">
+              <img src="images/slider/slider-item.jpg" alt="#">
+            </a>
+            <div class="slider__content">
+              <div class="slider__content-title">
+                One Page Resume Template
+              </div>
+              <div class="slider__content-profil">
+                <a class="slider__content-avatar" href="#">
+                  <img src="images/user.jpg" alt="#">
+                  <span>Aazz Tech</span>
+                </a>
+                <a class="slider__content-logo" href="#">
+                  <img src="images/icons/slider-content.png" alt="#">
+                  <span>Word Press</span>
+                </a>
+              </div>
+              <div class="slider__content-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+                leo quam aliquet congue justo ut scelerisque.
+              </div>
+              <div class="slider__content-info">
+                <a href="#">website</a>
+                <a href="#">plugin</a>
+                <a href="#">landing page</a>
+              </div>
+              <div class="slider__content-rating">
+                <div class="slider__content-price">
+                  <a href="#">
+                    $10 - $50
+                  </a>
+                  <button type="submit">
+                    <svg class="lnr-heart">
+                      <use xlink:href="sprite.svg#lnr-heart"></use>
+                    </svg>
+                    <span class="color__heart">46</span>
+                  </button>
+                  <button type="submit">
+                    <svg class="lnr-cart">
+                      <use xlink:href="sprite.svg#lnr-cart"></use>
+                    </svg>
+                    <span class="color__cart">634</span>
+                  </button>
+                </div>
+                <div class="slider__content-star">
+                  <div class="rate-star"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__inner">
+          <div class="slider__item">
+            <a class="slider__item-img" href="#">
+              <img src="images/slider/slider-item2.jpg" alt="#">
+            </a>
+            <div class="slider__content">
+              <div class="slider__content-title">
+                One Page Resume Template
+              </div>
+              <div class="slider__content-profil">
+                <a class="slider__content-avatar" href="#">
+                  <img src="images/user.jpg" alt="#">
+                  <span>Aazz Tech</span>
+                </a>
+                <a class="slider__content-logo" href="#">
+                  <img src="images/icons/slider-content.png" alt="#">
+                  <span>Word Press</span>
+                </a>
+              </div>
+              <div class="slider__content-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+                leo quam aliquet congue justo ut scelerisque.
+              </div>
+              <div class="slider__content-info">
+                <a href="#">website</a>
+                <a href="#">plugin</a>
+                <a href="#">landing page</a>
+              </div>
+              <div class="slider__content-rating">
+                <div class="slider__content-price">
+                  <a href="#">
+                    $10 - $50
+                  </a>
+                  <button type="submit">
+                    <svg class="lnr-heart">
+                      <use xlink:href="sprite.svg#lnr-heart"></use>
+                    </svg>
+                    <span class="color__heart">46</span>
+                  </button>
+                  <button type="submit">
+                    <svg class="lnr-cart">
+                      <use xlink:href="sprite.svg#lnr-cart"></use>
+                    </svg>
+                    <span class="color__cart">634</span>
+                  </button>
+                </div>
+                <div class="slider__content-star">
+                  <div class="rate-star"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__inner">
+          <div class="slider__item">
+            <a class="slider__item-img" href="#">
+              <img src="images/slider/slider-item3.jpg" alt="#">
+            </a>
+            <div class="slider__content">
+              <div class="slider__content-title">
+                One Page Resume Template
+              </div>
+              <div class="slider__content-profil">
+                <a class="slider__content-avatar" href="#">
+                  <img src="images/user.jpg" alt="#">
+                  <span>Aazz Tech</span>
+                </a>
+                <a class="slider__content-logo" href="#">
+                  <img src="images/icons/slider-content.png" alt="#">
+                  <span>Word Press</span>
+                </a>
+              </div>
+              <div class="slider__content-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+                leo quam aliquet congue justo ut scelerisque.
+              </div>
+              <div class="slider__content-info">
+                <a href="#">website</a>
+                <a href="#">plugin</a>
+                <a href="#">landing page</a>
+              </div>
+              <div class="slider__content-rating">
+                <div class="slider__content-price">
+                  <a href="#">
+                    $10 - $50
+                  </a>
+                  <button type="submit">
+                    <svg class="lnr-heart">
+                      <use xlink:href="sprite.svg#lnr-heart"></use>
+                    </svg>
+                    <span class="color__heart">46</span>
+                  </button>
+                  <button type="submit">
+                    <svg class="lnr-cart">
+                      <use xlink:href="sprite.svg#lnr-cart"></use>
+                    </svg>
+                    <span class="color__cart">634</span>
+                  </button>
+                </div>
+                <div class="slider__content-star">
+                  <div class="rate-star"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__inner">
+          <div class="slider__item">
+            <a class="slider__item-img" href="#">
+              <img src="images/slider/slider-item4.jpg" alt="#">
+            </a>
+            <div class="slider__content">
+              <div class="slider__content-title">
+                One Page Resume Template
+              </div>
+              <div class="slider__content-profil">
+                <a class="slider__content-avatar" href="#">
+                  <img src="images/user.jpg" alt="#">
+                  <span>Aazz Tech</span>
+                </a>
+                <a class="slider__content-logo" href="#">
+                  <img src="images/icons/slider-content.png" alt="#">
+                  <span>Word Press</span>
+                </a>
+              </div>
+              <div class="slider__content-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+                leo quam aliquet congue justo ut scelerisque.
+              </div>
+              <div class="slider__content-info">
+                <a href="#">website</a>
+                <a href="#">plugin</a>
+                <a href="#">landing page</a>
+              </div>
+              <div class="slider__content-rating">
+                <div class="slider__content-price">
+                  <a href="#">
+                    $10 - $50
+                  </a>
+                  <button type="submit">
+                    <svg class="lnr-heart">
+                      <use xlink:href="sprite.svg#lnr-heart"></use>
+                    </svg>
+                    <span class="color__heart">46</span>
+                  </button>
+                  <button type="submit">
+                    <svg class="lnr-cart">
+                      <use xlink:href="sprite.svg#lnr-cart"></use>
+                    </svg>
+                    <span class="color__cart">634</span>
+                  </button>
+                </div>
+                <div class="slider__content-star">
+                  <div class="rate-star"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
   <script src="js/libs.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
