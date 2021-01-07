@@ -1,4 +1,6 @@
 $(function(){
+  
+  var mixer = mixitup('.products__inner');
 
   $('.slider__carousel').slick({
     prevArrow: $('.slick-prev'),
@@ -7,9 +9,10 @@ $(function(){
 
   $(".rate-star").rateYo({
     rating: 4.5,
-    starWidth: "16px",
+    starWidth: "13px",
     readOnly: true,
-    spacing: "5px"
+    spacing: "3px"
   });
+
   
 });

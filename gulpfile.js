@@ -35,7 +35,8 @@ let gulp = require('gulp'),
   return gulp.src([
    'node_modules/slick-carousel/slick/slick.js',
    'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
-   'node_modules/rateyo/v2.3.2/jquery.rateyo.js'
+   'node_modules/rateyo/v2.3.2/jquery.rateyo.js',
+   'node_modules/mixitup/dist/mixitup.js'
   ])
   .pipe(concat('libs.min.js'))
   .pipe(uglify())
