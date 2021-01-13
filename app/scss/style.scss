@@ -277,9 +277,9 @@
 
 // end Heading
 
-// start advantages
+// start features
 
-.advantages {
+.features {
   padding: 186px 0 120px;
 
   &__inner {
@@ -288,7 +288,7 @@
   }
 
   &__item {
-    width: 362px;
+    width: 364px;
     text-align: center;
     padding: 40px 36px 50px;
 
@@ -321,7 +321,7 @@
   }
 }
 
-// ebd advantages
+// ebd features
 
 // start slider
 
@@ -624,10 +624,11 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 31px;
-    
-    &:hover{
-      background-image: linear-gradient( 90deg, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%);
-      img{
+
+    &:hover {
+      background-image: linear-gradient(90deg, rgb(6, 116, 236) 0%, rgb(61, 94, 215) 46%, rgb(115, 71, 193) 100%);
+
+      img {
         opacity: 0.3;
       }
     }
@@ -809,30 +810,36 @@
 
 // start followers
 
-.followers{
+.followers {
   background-color: #eff1f5;
   padding: 120px 0;
-  &__title{
+
+  &__title {
     margin-bottom: 51px;
-    
-    &-btn{
+
+    &-btn {
       background-color: $link;
-      button{
+
+      button {
         background-color: transparent;
       }
     }
   }
-  &__carousel{
+
+  &__carousel {
     overflow: hidden;
-    filter: drop-shadow( 0px 0px 20px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
   }
-  &__inner{
+
+  &__inner {
     display: flex;
   }
-  &__item{
+
+  &__item {
     flex-shrink: 0;
     box-shadow: none;
   }
+
   .jq-ry-normal-group svg {
     fill: #fff;
     stroke: #ffc000;
@@ -845,3 +852,117 @@
 }
 
 // end followers
+
+// start info
+
+.info {
+  background-color: #212225;
+  padding: 100px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__img {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 52px;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  &__number {
+    font-size: 36px;
+    margin-bottom: 8px;
+
+    .briefcase {
+      color: #feb71d;
+    }
+
+    .download {
+      color: #58c9e9;
+    }
+
+    .smile {
+      color: #77de51;
+    }
+
+    .users {
+      color: #ff6a6d;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 36px;
+    color: #fff;
+  }
+}
+
+// end info
+
+// start advantages
+
+.advantages {
+  padding: 120px 0 90px;
+
+  &__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 22px;
+
+    span {
+      color: $link;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #555555;
+    margin-bottom: 53px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+    counter-increment: num;
+    position: relative;
+    margin-bottom: 30px;
+    
+    &::before {
+      content: counter(num);
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      font-size: 48px;
+      color: rgba(92, 135, 248, 0.2);
+    }
+    &:nth-child(-n+9):before {
+      content: "0" counter(num);
+    }
+  }
+
+  &__item-img {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+  }
+}
+
+// end advantages
