@@ -153,11 +153,11 @@
   color: #fff;
 }
 
-.heading__title {
+.heading__inner {
   text-align: center;
   font-size: 60px;
 
-  .title__bottom {
+  &__title-bottom {
     font-weight: 700;
   }
 
@@ -330,16 +330,7 @@
   padding: 120px 0;
 
   &__title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 110px;
-    padding: 44px 31px;
-    background-color: #fff;
-    font-size: 30px;
     margin-bottom: 51px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.3);
 
     &-btn {
       display: flex;
@@ -351,7 +342,7 @@
       background-color: #7347c1;
 
       button {
-        background-color: #7347c1;
+        background-color: transparent;
         border: none;
         outline: transparent;
         cursor: pointer;
@@ -549,16 +540,7 @@
   padding: 120px 0;
 
   &__title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 110px;
-    padding: 44px 31px;
-    background-color: #fff;
-    font-size: 30px;
     margin-bottom: 31px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.3);
   }
 
   &__filter {
@@ -585,15 +567,10 @@
 
 
   &__title-btn {
-    display: flex;
-    align-items: center;
+    justify-content: start;
     height: 90px;
-    padding: 44px 31px;
-    background-color: #fff;
     font-size: 15px;
     margin-bottom: 51px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.3);
 
     button {
       border: none;
@@ -647,6 +624,13 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 31px;
+    
+    &:hover{
+      background-image: linear-gradient( 90deg, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%);
+      img{
+        opacity: 0.3;
+      }
+    }
 
     button {
       background-color: transparent;
@@ -764,7 +748,7 @@
   }
 
   &__button {
-    margin: 28px 0 120px;
+    margin-top: 28px;
     text-align: center;
 
     button {
@@ -821,6 +805,43 @@
   fill: $link;
 }
 
-
-
 // end products
+
+// start followers
+
+.followers{
+  background-color: #eff1f5;
+  padding: 120px 0;
+  &__title{
+    margin-bottom: 51px;
+    
+    &-btn{
+      background-color: $link;
+      button{
+        background-color: transparent;
+      }
+    }
+  }
+  &__carousel{
+    overflow: hidden;
+    filter: drop-shadow( 0px 0px 20px rgba(0, 0, 0, 0.1));
+  }
+  &__inner{
+    display: flex;
+  }
+  &__item{
+    flex-shrink: 0;
+    box-shadow: none;
+  }
+  .jq-ry-normal-group svg {
+    fill: #fff;
+    stroke: #ffc000;
+    stroke-width: 40;
+  }
+
+  .jq-ry-rated-group svg {
+    fill: #ffc000;
+  }
+}
+
+// end followers
