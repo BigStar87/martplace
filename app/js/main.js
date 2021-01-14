@@ -26,6 +26,5 @@ $(function(){
     readOnly: true,
     spacing: "3px"
   });
-
   
 });

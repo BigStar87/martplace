@@ -944,17 +944,14 @@
     counter-increment: num;
     position: relative;
     margin-bottom: 30px;
-    
+
     &::before {
-      content: counter(num);
+      content: "0"counter(num);
       position: absolute;
       left: 20px;
       top: 20px;
       font-size: 48px;
       color: rgba(92, 135, 248, 0.2);
-    }
-    &:nth-child(-n+9):before {
-      content: "0" counter(num);
     }
   }
 
@@ -966,3 +963,81 @@
 }
 
 // end advantages
+
+// start score
+
+.score {
+
+  &__inner {
+    display: flex;
+  }
+
+  .bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__sell {
+    background: url(../images/BG-sell.png);
+  }
+
+  &__img {
+    width: 120px;
+    height: 100px;
+    margin: 0 auto 50px;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 42px;
+  }
+
+  &__btn {
+    button {
+      max-width: 190px;
+      width: 100%;
+      padding: 20px 0;
+      border-radius: 50px;
+      background-color: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+      outline: transparent;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: #fff;
+        color: $link;
+      }
+
+      &:active {
+        transform: scale(0.9, 0.9);
+      }
+    }
+  }
+
+  &__duy {
+    background: url(../images/BG-buy.png);
+    button{
+      &:hover{
+        color: #7347c1;
+      }
+    }
+  }
+}
+
+// end score
