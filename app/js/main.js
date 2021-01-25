@@ -14,9 +14,25 @@ $(function(){
     slidesPerView: 3,
     slidesPerGroup: 3,
     spaceBetween: 30,
+    autoplay: {
+      delay: 5000,
+    },
     navigation: {
       nextEl: '.slick-next',
       prevEl: '.slick-prev',
+    },
+  });
+
+  var mySwiper2 = new Swiper('.feedback__carousel', {
+    loop: true,
+    slideClass: 'feedback__item',
+    wrapperClass: 'feedback__inner',
+    slidesPerView: 2,
+    slidesPerGroup: 2,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
   });
 
